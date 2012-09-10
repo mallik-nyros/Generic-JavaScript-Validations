@@ -1,0 +1,45 @@
+<html>
+<head>
+
+<script type="text/javascript" src="js/validate.js" >
+</script>
+<link  type="text/css" href="css/style.css" rel="stylesheet"> 
+</head>
+<body>
+<section id="main">
+<h1> Form </h1>
+<FORM    show_alert="1"  name=f1 onSubmit="return Validate(this)">
+ User name <input type="text" name="FirstName"  maxlength="25" validate="not_empty"  placeHolder="enter user name" />
+ <br>
+  password <input type="password" name="password" placeHolder="enter password" validate="not_empty"/>
+ <br>
+ First name <input type="text" name="first name"  placeHolder="enter first name" validate="not_empty" >
+
+  Last name <input type="text" name="last name"  placeHolder="enter last name" validate="not_empty">
+  <br>
+   
+<h4>Gender</h4>  
+   male <input type=radio name="gender"  validate="not_empty" > 
+female
+  <input type=radio name="gender" validate="not_empty"  >  
+    <br />
+  
+  
+ 
+  <h3> HOBBIES</h3>
+  Painting 
+  <input type=checkbox name="hobbies"  validate="not_empty" >
+  Singing
+  <input type=checkbox name="hobbies"  >
+  Traveling
+  <input type=checkbox name="hobbies"  >
+ Gardening
+  <input type=checkbox name="hobbies" >
+  <BR>
+ Phone number <input type="text" name="phone number" placeHolder="enter phone number" validate="phone"/>
+  
+  <INPUT type=submit value="Submit/Validate">
+</FORM>
+</section>
+</body>
+</html>
